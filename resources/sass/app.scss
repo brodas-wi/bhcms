@@ -1,0 +1,101 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.custom-dropdown .dropdown-item:hover {
+    background-color: #0154b8 !important;
+    color: white !important;
+}
+
+.bg-primary {
+    background: #0154b8 !important;
+}
+
+// CSS for button styles
+// for button primary
+.btn-primary {
+    background: #0154b8;
+    border: none;
+}
+.btn-primary:hover {
+    background: #005ccb;
+}
+
+.btn-outline-primary {
+    border-color: #0154b8;
+    color: #0154b8;
+}
+.btn-outline-primary:hover {
+    background: #005ccb;
+}
+
+// for button link
+.btn-link {
+    text-decoration: none;
+}
+// CSS for button styles
+
+// CSS for background styles
+// for background light
+.bg-light {
+    background: linear-gradient(to right, #0154b8, #4c86ca);
+    color: white;
+}
+// CSS for background styles
+
+// CSS for pagination links
+.pagination {
+    margin-bottom: 0;
+}
+
+.pagination .page-item .page-link {
+    color: #0154b8; /* Color de enlace */
+    background-color: #f8f9fa; /* Fondo */
+}
+.pagination .page-item.active .page-link {
+    background-color: #0154b8; /* Color de fondo activo */
+    border-color: #0154b8;
+    color: white;
+}
+.pagination .page-item.disabled .page-link {
+    color: #6c757d;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+// CSS for pagination links
+
+
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus:not(:focus-visible) {
+    color: white;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: none; /* Elimina la imagen de fondo predeterminada */
+}
+
+.navbar-toggler::after {
+    content: "☰"; /* Utiliza un ícono de hamburguesa de texto en blanco */
+    font-size: 1.5rem; /* Ajusta el tamaño del ícono según sea necesario */
+    color: #ffffff; /* Cambia el color del ícono a blanco */
+    display: inline-block;
+    width: 1.5rem; /* Ajusta el ancho del ícono según sea necesario */
+    height: 1.5rem; /* Ajusta la altura del ícono según sea necesario */
+    text-align: center; /* Centra el ícono dentro del botón */
+    line-height: 1.5rem; /* Ajusta la línea de altura del ícono para centrarlo verticalmente */
+}

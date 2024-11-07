@@ -1,0 +1,153 @@
+/* Estilos generales para plugins */
+.gjs-plugin-block {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    transition: all 0.2s ease;
+    cursor: move;
+}
+
+.gjs-plugin-block:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-color: #b9b9b9;
+}
+
+.gjs-plugin-block i {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.gjs-plugin-block-title {
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos para plugins específicos */
+.gjs-plugin-dynamic {
+    position: relative;
+    min-height: 50px;
+    border: 2px dashed #e2e2e2;
+    margin: 10px 0;
+    padding: 15px;
+}
+
+.gjs-plugin-dynamic::before {
+    content: attr(data-plugin-name);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: white;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #666;
+}
+
+.gjs-plugin-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.gjs-plugin-loading::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.gjs-plugin-error {
+    padding: 15px;
+    margin: 10px 0;
+    background: #fff3f3;
+    border: 1px solid #ffcdd2;
+    border-radius: 4px;
+    color: #d32f2f;
+}
+
+.gjs-plugin-error i {
+    margin-right: 5px;
+    color: #d32f2f;
+}
+
+/* Categorías de plugins */
+.gjs-blocks-c {
+    padding: 10px;
+}
+
+.gjs-block-category {
+    margin-bottom: 20px;
+}
+
+.gjs-block-category-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el panel de plugins */
+.gjs-pn-plugins {
+    padding: 15px;
+}
+
+.plugin-manager-header {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.plugin-manager-search {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.plugin-list {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+/* Animaciones */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .gjs-plugin-block {
+        width: calc(50% - 10px);
+        float: left;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gjs-plugin-block {
+        width: 100%;
+        float: none;
+        margin: 0 0 10px 0;
+    }
+}

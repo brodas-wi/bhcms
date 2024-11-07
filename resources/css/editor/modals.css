@@ -1,0 +1,89 @@
+/* Modal Styles */
+.modal-content {
+    background-color: #282c34;
+    border: 1px solid #4b5263;
+    color: #abb2bf;
+}
+
+.modal-header {
+    border-bottom: 1px solid #4b5263;
+    padding: 1rem;
+}
+
+.modal-footer {
+    border-top: 1px solid #4b5263;
+    padding: 1rem;
+}
+
+/* Code Editor Modal */
+.code-editor-wrapper {
+    height: 400px;
+    border: 1px solid #4b5263;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.CodeMirror {
+    height: 100% !important;
+    font-family: "Fira Code", monospace;
+    font-size: 14px;
+}
+
+.CodeMirror-gutters {
+    border-right: 1px solid #4b5263;
+    background-color: #21252b;
+}
+
+.CodeMirror-linenumber {
+    color: #636d83;
+}
+
+/* Button Groups */
+.button-group {
+    margin-bottom: 10px;
+}
+
+.button-group button {
+    margin-right: 8px;
+}
+
+/* Form Elements */
+.form-control {
+    background-color: #1e2227;
+    border: 1px solid #4b5263;
+    color: #abb2bf;
+}
+
+.form-control:focus {
+    background-color: #2c313a;
+    border-color: #528bff;
+    color: #abb2bf;
+    box-shadow: 0 0 0 0.2rem rgba(82, 139, 255, 0.25);
+}
+
+/* Plugin Error Display */
+.plugin-error {
+    padding: 1rem;
+    text-align: center;
+    color: #e06c75;
+    background-color: rgba(224, 108, 117, 0.1);
+    border: 1px solid #e06c75;
+    border-radius: 4px;
+    margin: 1rem;
+}
+
+.plugin-error i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.plugin-error small {
+    display: block;
+    margin-top: 0.5rem;
+    color: #abb2bf;
+}
+
+/* Modal Sizes */
+.modal-xl {
+    max-width: 90%;
+}
