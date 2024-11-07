@@ -1,0 +1,11 @@
+{
+    "name": "ChatFloating",
+    "description": "Plugin global que a\u00f1ade un bot\u00f3n de chat flotante",
+    "version": "1.0.0",
+    "author": "admin",
+    "main_class": "ChatFloating",
+    "selected_hooks": [
+        "after_footer"
+    ],
+    "config": null
+}

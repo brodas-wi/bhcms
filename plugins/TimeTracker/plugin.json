@@ -1,0 +1,11 @@
+{
+    "name": "Time Tracker",
+    "description": "Plugin para registrar horas de trabajo",
+    "version": "1.0.0",
+    "author": "admin",
+    "main_class": "TimeTracker",
+    "selected_hooks": [
+        "after_content"
+    ],
+    "config": null
+}
